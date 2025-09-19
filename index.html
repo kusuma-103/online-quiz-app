@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Topic Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 class="quiz-title">🎓 Multi-Topic Quiz</h1>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen">
+      <h2>Select a Topic</h2>
+      <div class="topics">
+        <button class="btn topic-btn" data-topic="math">Math</button>
+        <button class="btn topic-btn" data-topic="science">Science</button>
+        <button class="btn topic-btn" data-topic="history">History</button>
+        <button class="btn topic-btn" data-topic="gk">General Knowledge</button>
+      </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen hidden">
+      <div class="quiz-header">
+        <p id="question-number">Question 1 of 5</p>
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <div id="question" class="question">Loading...</div>
+      <div id="answer-buttons" class="answer-buttons"></div>
+
+      <button id="next-btn" class="btn next-btn">Next</button>
+      <button id="submit-btn" class="btn submit-btn">Submit</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen hidden">
+      <div id="result" class="result"></div>
+      <button id="restart-btn" class="btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
